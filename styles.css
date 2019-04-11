@@ -1,0 +1,26 @@
+table.shiptable {
+  border-width: 2px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+
+table.shiptable th {
+  border-width: 1px;
+  border-color: 666666;
+  border-collapse: collapse;
+  background-color: #dedede;
+  max-width: 90px;
+  border-style: solid;
+  overflow: hidden;
+}
+
+table.shiptable td {
+  border-width: 1px;
+  border-color: black;
+  border-collapse: collapse;
+  background-color: whitesmoke;
+  border-style: solid;
+  text-align: left;
+  max-width: 90px;
+  overflow: hidden;
+}
