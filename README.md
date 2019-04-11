@@ -5,3 +5,5 @@ Basically I am reading the public API that displays a list of ships in the movie
 
 The code consists of just 3 files: index.html, javascript.js and styles.css. Its very easy to run the files once you download to your desktop. 
 Just save all the files into a folder and run the index.html. 
+
+There is also a word document that is attached, which shows my effort for Task 1 and Task3. Kindly go through that one too separately. 
