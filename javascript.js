@@ -1,42 +1,3 @@
-const app = document.getElementById("root");
-const container = document.createElement("div");
-container.id = "container";
-app.appendChild(container);
-
-const table = document.createElement("table");
-table.className = "shiptable";
-
-var thead = document.createElement("thead");
-var tbody = document.createElement("tbody");
-var hrow = document.createElement("tr");
-
-[
-  "Name",
-  "Model",
-  "Manufacturer",
-  "Cost",
-  "Length",
-  "Max ATM Speed",
-  "Crew",
-  "Passengers",
-  "Cargo capacity",
-  "Consumables",
-  "Hyperdrive Rating",
-  "MGLT",
-  "Starship Class",
-  "Pilots",
-  "Films",
-  "Created",
-  "Edited",
-  "URL"
-].forEach(function(el) {
-  var th = document.createElement("th");
-  th.appendChild(document.createTextNode(el));
-  hrow.appendChild(th);
-});
-
-thead.appendChild(hrow);
-table.appendChild(thead);
 /*
 var request = new XMLHttpRequest();
 request.open("GET", "https://swapi.co/api/starships/", true);
@@ -52,6 +13,8 @@ if (request.status >= 200 && request.status < 400) {
 
 request.send();
 */
+const shiptable = document.getElementById("shiptable");
+const tbody = document.createElement("tbody");
 
 var starshipsList = data;
 starshipsList.results.forEach(starship => {
@@ -66,6 +29,4 @@ starshipsList.results.forEach(starship => {
   }
   tbody.appendChild(tr);
 });
-table.appendChild(tbody);
-
-container.appendChild(table);
+shiptable.appendChild(tbody);
